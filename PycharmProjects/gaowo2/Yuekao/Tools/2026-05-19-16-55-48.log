@@ -1,0 +1,411 @@
+DEBUG- selenium_manager.py- Selenium Manager binary found at: C:\Users\86150\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\common\windows\selenium-manager.exe- 2026-05-19 16:55:48,411- 101
+DEBUG- selenium_manager.py- Executing process: C:\Users\86150\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json- 2026-05-19 16:55:48,412- 114
+DEBUG- selenium_manager.py- Found chromedriver 147.0.7727.57 in PATH: C:\Program Files\Python38\chromedriver.exe- 2026-05-19 16:55:48,764- 140
+DEBUG- selenium_manager.py- chrome detected at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe- 2026-05-19 16:55:48,764- 140
+DEBUG- selenium_manager.py- Running command: wmic datafile where name='C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' get Version /value- 2026-05-19 16:55:48,764- 140
+DEBUG- selenium_manager.py- Output: "\r\r\n\r\r\nVersion=148.0.7778.168\r\r\n\r\r\n\r\r\n\r"- 2026-05-19 16:55:48,764- 140
+DEBUG- selenium_manager.py- Detected browser: chrome 148.0.7778.168- 2026-05-19 16:55:48,764- 140
+DEBUG- selenium_manager.py- Required driver: chromedriver 148.0.7778.167- 2026-05-19 16:55:48,764- 140
+WARNING- selenium_manager.py- The chromedriver version (147.0.7727.57) detected in PATH at C:\Program Files\Python38\chromedriver.exe might not be compatible with the detected chrome version (148.0.7778.168); currently, chromedriver 148.0.7778.167 is recommended for chrome 148.*, so it is advised to delete the driver in PATH and retry- 2026-05-19 16:55:48,764- 138
+DEBUG- selenium_manager.py- Driver path: C:\Program Files\Python38\chromedriver.exe- 2026-05-19 16:55:48,764- 140
+DEBUG- selenium_manager.py- Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe- 2026-05-19 16:55:48,764- 140
+DEBUG- service.py- Started executable: `C:\Program Files\Python38\chromedriver.exe` in a child process with pid: 23732 using 0 to output -3- 2026-05-19 16:55:48,768- 225
+DEBUG- remote_connection.py- POST http://localhost:61581/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}- 2026-05-19 16:55:49,305- 403
+DEBUG- connectionpool.py- Starting new HTTP connection (1): localhost:61581- 2026-05-19 16:55:49,305- 243
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session HTTP/11" 200 0- 2026-05-19 16:55:50,043- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"148.0.7778.168","chrome":{"chromedriverVersion":"147.0.7727.57 (b4f28b5637d02137aa7f80eb8d589b0c005c3426-refs/branch-heads/7727_49@{#7})","userDataDir":"C:\\Users\\86150\\AppData\\Local\\Temp\\scoped_dir23732_674228345"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:61584"},"goog:processID":25800,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"12984af654efa46f8f656da1b0dbad6c"}} | headers=HTTPHeaderDict({'Content-Length': '905', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:50,043- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:50,043- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/window/maximize {}- 2026-05-19 16:55:50,043- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/window/maximize HTTP/11" 200 0- 2026-05-19 16:55:50,066- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"height":1034,"width":1722,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:50,066- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:50,066- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/timeouts {'implicit': 10000}- 2026-05-19 16:55:50,066- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/timeouts HTTP/11" 200 0- 2026-05-19 16:55:50,066- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:50,066- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:50,066- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/url {'url': 'https://mail.163.com/'}- 2026-05-19 16:55:50,068- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/url HTTP/11" 200 0- 2026-05-19 16:55:50,860- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:50,860- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:50,860- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/frame {'id': 0}- 2026-05-19 16:55:52,870- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/frame HTTP/11" 200 0- 2026-05-19 16:55:52,878- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,878- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,879- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'css selector', 'value': '[name="email"]'}- 2026-05-19 16:55:52,879- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:52,909- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1813"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,910- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,910- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1813'}]}- 2026-05-19 16:55:52,910- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/execute/sync HTTP/11" 200 0- 2026-05-19 16:55:52,921- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,921- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,921- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'css selector', 'value': '[name="email"]'}- 2026-05-19 16:55:52,921- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:52,926- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1813"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,926- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,926- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element/f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1813/value {'text': '15040504381', 'value': ['1', '5', '0', '4', '0', '5', '0', '4', '3', '8', '1']}- 2026-05-19 16:55:52,926- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element/f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1813/value HTTP/11" 200 0- 2026-05-19 16:55:52,957- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,959- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,959- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'xpath', 'value': '/html/body/div[2]/div[2]/div[2]/form/div/div[3]/div[2]/input[2]'}- 2026-05-19 16:55:52,959- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:52,965- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1826"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,965- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,965- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1826'}]}- 2026-05-19 16:55:52,965- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/execute/sync HTTP/11" 200 0- 2026-05-19 16:55:52,969- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,969- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,970- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'xpath', 'value': '/html/body/div[2]/div[2]/div[2]/form/div/div[3]/div[2]/input[2]'}- 2026-05-19 16:55:52,970- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:52,999- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1826"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:52,999- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:52,999- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element/f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1826/value {'text': '123456Aa', 'value': ['1', '2', '3', '4', '5', '6', 'A', 'a']}- 2026-05-19 16:55:52,999- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element/f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1826/value HTTP/11" 200 0- 2026-05-19 16:55:53,048- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:53,048- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:53,048- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'css selector', 'value': '[id="dologin"]'}- 2026-05-19 16:55:53,048- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:53,056- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1856"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:53,056- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:53,056- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1856'}]}- 2026-05-19 16:55:53,056- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/execute/sync HTTP/11" 200 0- 2026-05-19 16:55:53,060- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:53,060- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:53,060- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'css selector', 'value': '[id="dologin"]'}- 2026-05-19 16:55:53,060- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:53,065- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1856"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:53,066- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:53,066- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element/f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1856/click {}- 2026-05-19 16:55:53,066- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element/f.03F3F681756D51D871279F54146B4403.d.6953C3D2CF2E013A92BD0A5688F4ECA6.e.1856/click HTTP/11" 200 0- 2026-05-19 16:55:53,157- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:53,157- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:53,157- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/frame {'id': None}- 2026-05-19 16:55:53,158- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/frame HTTP/11" 200 0- 2026-05-19 16:55:53,160- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:53,160- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:53,160- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'css selector', 'value': '.hy1'}- 2026-05-19 16:55:58,170- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:58,179- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B5A1D88E4AE02C716CBDAD359337A59B.d.DB98176FAC8A09FE4BDE16D22943A242.e.3083"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:58,180- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:58,180- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B5A1D88E4AE02C716CBDAD359337A59B.d.DB98176FAC8A09FE4BDE16D22943A242.e.3083'}]}- 2026-05-19 16:55:58,180- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/execute/sync HTTP/11" 200 0- 2026-05-19 16:55:58,187- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:58,187- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:58,187- 465
+DEBUG- remote_connection.py- POST http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element {'using': 'css selector', 'value': '.hy1'}- 2026-05-19 16:55:58,187- 403
+DEBUG- connectionpool.py- http://localhost:61581 "POST /session/12984af654efa46f8f656da1b0dbad6c/element HTTP/11" 200 0- 2026-05-19 16:55:58,196- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B5A1D88E4AE02C716CBDAD359337A59B.d.DB98176FAC8A09FE4BDE16D22943A242.e.3083"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:58,196- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:58,196- 465
+DEBUG- remote_connection.py- GET http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c/element/f.B5A1D88E4AE02C716CBDAD359337A59B.d.DB98176FAC8A09FE4BDE16D22943A242.e.3083/text {}- 2026-05-19 16:55:58,196- 403
+DEBUG- connectionpool.py- http://localhost:61581 "GET /session/12984af654efa46f8f656da1b0dbad6c/element/f.B5A1D88E4AE02C716CBDAD359337A59B.d.DB98176FAC8A09FE4BDE16D22943A242.e.3083/text HTTP/11" 200 0- 2026-05-19 16:55:58,207- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":"15040504381"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:55:58,207- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:55:58,207- 465
+DEBUG- remote_connection.py- DELETE http://localhost:61581/session/12984af654efa46f8f656da1b0dbad6c {}- 2026-05-19 16:56:01,215- 403
+DEBUG- connectionpool.py- http://localhost:61581 "DELETE /session/12984af654efa46f8f656da1b0dbad6c HTTP/11" 200 0- 2026-05-19 16:56:01,282- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:01,282- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:01,282- 465
+DEBUG- selenium_manager.py- Selenium Manager binary found at: C:\Users\86150\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\common\windows\selenium-manager.exe- 2026-05-19 16:56:03,448- 101
+DEBUG- selenium_manager.py- Executing process: C:\Users\86150\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json- 2026-05-19 16:56:03,448- 114
+DEBUG- selenium_manager.py- Found chromedriver 147.0.7727.57 in PATH: C:\Program Files\Python38\chromedriver.exe- 2026-05-19 16:56:03,799- 140
+DEBUG- selenium_manager.py- chrome detected at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe- 2026-05-19 16:56:03,799- 140
+DEBUG- selenium_manager.py- Running command: wmic datafile where name='C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' get Version /value- 2026-05-19 16:56:03,799- 140
+DEBUG- selenium_manager.py- Output: "\r\r\n\r\r\nVersion=148.0.7778.168\r\r\n\r\r\n\r\r\n\r"- 2026-05-19 16:56:03,799- 140
+DEBUG- selenium_manager.py- Detected browser: chrome 148.0.7778.168- 2026-05-19 16:56:03,799- 140
+DEBUG- selenium_manager.py- Required driver: chromedriver 148.0.7778.167- 2026-05-19 16:56:03,799- 140
+WARNING- selenium_manager.py- The chromedriver version (147.0.7727.57) detected in PATH at C:\Program Files\Python38\chromedriver.exe might not be compatible with the detected chrome version (148.0.7778.168); currently, chromedriver 148.0.7778.167 is recommended for chrome 148.*, so it is advised to delete the driver in PATH and retry- 2026-05-19 16:56:03,799- 138
+DEBUG- selenium_manager.py- Driver path: C:\Program Files\Python38\chromedriver.exe- 2026-05-19 16:56:03,799- 140
+DEBUG- selenium_manager.py- Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe- 2026-05-19 16:56:03,799- 140
+DEBUG- service.py- Started executable: `C:\Program Files\Python38\chromedriver.exe` in a child process with pid: 6748 using 0 to output -3- 2026-05-19 16:56:03,803- 225
+DEBUG- remote_connection.py- POST http://localhost:52534/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}- 2026-05-19 16:56:04,324- 403
+DEBUG- connectionpool.py- Starting new HTTP connection (1): localhost:52534- 2026-05-19 16:56:04,325- 243
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session HTTP/11" 200 0- 2026-05-19 16:56:05,056- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"148.0.7778.168","chrome":{"chromedriverVersion":"147.0.7727.57 (b4f28b5637d02137aa7f80eb8d589b0c005c3426-refs/branch-heads/7727_49@{#7})","userDataDir":"C:\\Users\\86150\\AppData\\Local\\Temp\\scoped_dir6748_695431003"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52537"},"goog:processID":24764,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"032ecc7970fb6c95a00f06f3e4af8efd"}} | headers=HTTPHeaderDict({'Content-Length': '904', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:05,056- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:05,056- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/window/maximize {}- 2026-05-19 16:56:05,056- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/window/maximize HTTP/11" 200 0- 2026-05-19 16:56:05,079- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"height":1034,"width":1722,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:05,079- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:05,079- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/timeouts {'implicit': 10000}- 2026-05-19 16:56:05,079- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/timeouts HTTP/11" 200 0- 2026-05-19 16:56:05,080- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:05,080- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:05,080- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/url {'url': 'https://mail.163.com/'}- 2026-05-19 16:56:05,080- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/url HTTP/11" 200 0- 2026-05-19 16:56:05,900- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:05,900- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:05,900- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/frame {'id': 0}- 2026-05-19 16:56:07,911- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/frame HTTP/11" 200 0- 2026-05-19 16:56:07,921- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,921- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,922- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'css selector', 'value': '[name="email"]'}- 2026-05-19 16:56:07,922- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:07,929- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1811"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,929- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,929- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1811'}]}- 2026-05-19 16:56:07,930- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:07,938- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,938- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,938- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'css selector', 'value': '[name="email"]'}- 2026-05-19 16:56:07,938- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:07,943- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1811"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,944- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,944- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1811/value {'text': '15040504381', 'value': ['1', '5', '0', '4', '0', '5', '0', '4', '3', '8', '1']}- 2026-05-19 16:56:07,944- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1811/value HTTP/11" 200 0- 2026-05-19 16:56:07,978- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,978- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,978- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '/html/body/div[2]/div[2]/div[2]/form/div/div[3]/div[2]/input[2]'}- 2026-05-19 16:56:07,978- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:07,987- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1824"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,987- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,987- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1824'}]}- 2026-05-19 16:56:07,987- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:07,992- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,993- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,993- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '/html/body/div[2]/div[2]/div[2]/form/div/div[3]/div[2]/input[2]'}- 2026-05-19 16:56:07,993- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:07,997- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1824"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:07,997- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:07,998- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1824/value {'text': '123456Aa', 'value': ['1', '2', '3', '4', '5', '6', 'A', 'a']}- 2026-05-19 16:56:07,998- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1824/value HTTP/11" 200 0- 2026-05-19 16:56:08,044- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:08,045- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:08,045- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'css selector', 'value': '[id="dologin"]'}- 2026-05-19 16:56:08,045- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:08,054- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1854"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:08,054- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:08,054- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1854'}]}- 2026-05-19 16:56:08,054- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:08,058- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:08,058- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:08,058- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'css selector', 'value': '[id="dologin"]'}- 2026-05-19 16:56:08,059- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:08,063- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1854"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:08,064- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:08,064- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1854/click {}- 2026-05-19 16:56:08,064- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.781FB9F25A68AC1FFABF340636D860A2.d.35F4B1739A0BAED757E4A69CA7DC887C.e.1854/click HTTP/11" 200 0- 2026-05-19 16:56:08,151- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:08,151- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:08,151- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/frame {'id': None}- 2026-05-19 16:56:08,151- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/frame HTTP/11" 200 0- 2026-05-19 16:56:08,155- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:08,155- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:08,155- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'css selector', 'value': '.hy1'}- 2026-05-19 16:56:13,157- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:13,166- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.3085"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:13,166- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:13,166- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.3085'}]}- 2026-05-19 16:56:13,166- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:13,170- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:13,170- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:13,170- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'css selector', 'value': '.hy1'}- 2026-05-19 16:56:13,171- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:13,174- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.3085"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:13,174- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:13,174- 465
+DEBUG- remote_connection.py- GET http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.3085/text {}- 2026-05-19 16:56:13,174- 403
+DEBUG- connectionpool.py- http://localhost:52534 "GET /session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.3085/text HTTP/11" 200 0- 2026-05-19 16:56:13,182- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":"15040504381"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:13,182- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:13,182- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '//*[@id="_mail_component_96_96"]/span[2]'}- 2026-05-19 16:56:16,190- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:16,199- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.2790"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:16,199- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:16,199- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.2790'}]}- 2026-05-19 16:56:16,199- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:16,206- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:16,206- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:16,206- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '//*[@id="_mail_component_96_96"]/span[2]'}- 2026-05-19 16:56:16,206- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:16,211- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.2790"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:16,211- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:16,211- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.2790/click {}- 2026-05-19 16:56:16,211- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.2790/click HTTP/11" 200 0- 2026-05-19 16:56:16,255- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:16,255- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:16,255- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '/html/body/div[2]/div[1]/div[2]/header/div/div[4]/div[2]/span[1]'}- 2026-05-19 16:56:21,258- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:21,268- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4043"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,268- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,268- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4043'}]}- 2026-05-19 16:56:21,268- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:21,272- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,272- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,272- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '/html/body/div[2]/div[1]/div[2]/header/div/div[4]/div[2]/span[1]'}- 2026-05-19 16:56:21,272- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:21,277- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4043"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,277- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,277- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4043/click {}- 2026-05-19 16:56:21,277- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4043/click HTTP/11" 200 0- 2026-05-19 16:56:21,308- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,308- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,308- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '/html/body/div[10]/div[1]/div[4]/div/span'}- 2026-05-19 16:56:21,309- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:21,316- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4111"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,316- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,316- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4111'}]}- 2026-05-19 16:56:21,316- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:21,319- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,319- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,319- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element {'using': 'xpath', 'value': '/html/body/div[10]/div[1]/div[4]/div/span'}- 2026-05-19 16:56:21,319- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element HTTP/11" 200 0- 2026-05-19 16:56:21,324- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4111"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,324- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,324- 465
+DEBUG- remote_connection.py- POST http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4111/click {}- 2026-05-19 16:56:21,324- 403
+DEBUG- connectionpool.py- http://localhost:52534 "POST /session/032ecc7970fb6c95a00f06f3e4af8efd/element/f.53D68EFBA7F10FC2955CBBD0C388DE1E.d.6665BC4AE6C4D7A16265EFFF65D5B96F.e.4111/click HTTP/11" 200 0- 2026-05-19 16:56:21,377- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:21,377- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:21,377- 465
+DEBUG- remote_connection.py- DELETE http://localhost:52534/session/032ecc7970fb6c95a00f06f3e4af8efd {}- 2026-05-19 16:56:24,382- 403
+DEBUG- connectionpool.py- http://localhost:52534 "DELETE /session/032ecc7970fb6c95a00f06f3e4af8efd HTTP/11" 200 0- 2026-05-19 16:56:24,440- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:24,440- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:24,440- 465
+DEBUG- selenium_manager.py- Selenium Manager binary found at: C:\Users\86150\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\common\windows\selenium-manager.exe- 2026-05-19 16:56:26,612- 101
+DEBUG- selenium_manager.py- Executing process: C:\Users\86150\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json- 2026-05-19 16:56:26,612- 114
+DEBUG- selenium_manager.py- Found chromedriver 147.0.7727.57 in PATH: C:\Program Files\Python38\chromedriver.exe- 2026-05-19 16:56:26,960- 140
+DEBUG- selenium_manager.py- chrome detected at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe- 2026-05-19 16:56:26,960- 140
+DEBUG- selenium_manager.py- Running command: wmic datafile where name='C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' get Version /value- 2026-05-19 16:56:26,960- 140
+DEBUG- selenium_manager.py- Output: "\r\r\n\r\r\nVersion=148.0.7778.168\r\r\n\r\r\n\r\r\n\r"- 2026-05-19 16:56:26,960- 140
+DEBUG- selenium_manager.py- Detected browser: chrome 148.0.7778.168- 2026-05-19 16:56:26,960- 140
+DEBUG- selenium_manager.py- Required driver: chromedriver 148.0.7778.167- 2026-05-19 16:56:26,960- 140
+WARNING- selenium_manager.py- The chromedriver version (147.0.7727.57) detected in PATH at C:\Program Files\Python38\chromedriver.exe might not be compatible with the detected chrome version (148.0.7778.168); currently, chromedriver 148.0.7778.167 is recommended for chrome 148.*, so it is advised to delete the driver in PATH and retry- 2026-05-19 16:56:26,960- 138
+DEBUG- selenium_manager.py- Driver path: C:\Program Files\Python38\chromedriver.exe- 2026-05-19 16:56:26,960- 140
+DEBUG- selenium_manager.py- Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe- 2026-05-19 16:56:26,960- 140
+DEBUG- service.py- Started executable: `C:\Program Files\Python38\chromedriver.exe` in a child process with pid: 20604 using 0 to output -3- 2026-05-19 16:56:26,964- 225
+DEBUG- remote_connection.py- POST http://localhost:54069/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}- 2026-05-19 16:56:27,489- 403
+DEBUG- connectionpool.py- Starting new HTTP connection (1): localhost:54069- 2026-05-19 16:56:27,489- 243
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session HTTP/11" 200 0- 2026-05-19 16:56:28,221- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"148.0.7778.168","chrome":{"chromedriverVersion":"147.0.7727.57 (b4f28b5637d02137aa7f80eb8d589b0c005c3426-refs/branch-heads/7727_49@{#7})","userDataDir":"C:\\Users\\86150\\AppData\\Local\\Temp\\scoped_dir20604_1016429535"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:54072"},"goog:processID":7660,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d313131fec912885422cb4dfc4fe646d"}} | headers=HTTPHeaderDict({'Content-Length': '905', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:28,222- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:28,222- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/window/maximize {}- 2026-05-19 16:56:28,222- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/window/maximize HTTP/11" 200 0- 2026-05-19 16:56:28,243- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"height":1034,"width":1722,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:28,243- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:28,244- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/timeouts {'implicit': 10000}- 2026-05-19 16:56:28,244- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/timeouts HTTP/11" 200 0- 2026-05-19 16:56:28,244- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:28,245- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:28,245- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/url {'url': 'https://mail.163.com/'}- 2026-05-19 16:56:28,245- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/url HTTP/11" 200 0- 2026-05-19 16:56:29,767- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:29,767- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:29,767- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/frame {'id': 0}- 2026-05-19 16:56:31,768- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/frame HTTP/11" 200 0- 2026-05-19 16:56:31,776- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,776- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,776- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'css selector', 'value': '[name="email"]'}- 2026-05-19 16:56:31,776- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:31,784- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1811"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,785- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,785- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1811'}]}- 2026-05-19 16:56:31,786- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:31,794- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,794- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,794- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'css selector', 'value': '[name="email"]'}- 2026-05-19 16:56:31,794- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:31,799- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1811"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,799- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,799- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element/f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1811/value {'text': '15040504381', 'value': ['1', '5', '0', '4', '0', '5', '0', '4', '3', '8', '1']}- 2026-05-19 16:56:31,799- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element/f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1811/value HTTP/11" 200 0- 2026-05-19 16:56:31,828- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,828- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,828- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '/html/body/div[2]/div[2]/div[2]/form/div/div[3]/div[2]/input[2]'}- 2026-05-19 16:56:31,828- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:31,836- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1824"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,836- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,836- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1824'}]}- 2026-05-19 16:56:31,836- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:31,839- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,839- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,839- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '/html/body/div[2]/div[2]/div[2]/form/div/div[3]/div[2]/input[2]'}- 2026-05-19 16:56:31,839- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:31,843- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1824"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,843- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,843- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element/f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1824/value {'text': '123456Aa', 'value': ['1', '2', '3', '4', '5', '6', 'A', 'a']}- 2026-05-19 16:56:31,843- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element/f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1824/value HTTP/11" 200 0- 2026-05-19 16:56:31,881- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,881- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,881- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'css selector', 'value': '[id="dologin"]'}- 2026-05-19 16:56:31,881- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:31,890- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1854"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,890- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,890- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1854'}]}- 2026-05-19 16:56:31,890- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:31,896- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,897- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,897- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'css selector', 'value': '[id="dologin"]'}- 2026-05-19 16:56:31,897- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:31,901- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1854"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,901- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,901- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element/f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1854/click {}- 2026-05-19 16:56:31,901- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element/f.E7563BAD367F8BC158E29BF73AF12EBA.d.76CA68B9E31C3C0DB13D56F132AD4B1C.e.1854/click HTTP/11" 200 0- 2026-05-19 16:56:31,976- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,976- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,976- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/frame {'id': None}- 2026-05-19 16:56:31,976- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/frame HTTP/11" 200 0- 2026-05-19 16:56:31,977- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:31,977- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:31,977- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'css selector', 'value': '.hy1'}- 2026-05-19 16:56:36,984- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:37,018- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.3082"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:37,018- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:37,018- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.3082'}]}- 2026-05-19 16:56:37,018- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:37,023- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:37,023- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:37,023- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'css selector', 'value': '.hy1'}- 2026-05-19 16:56:37,023- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:37,027- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.3082"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:37,027- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:37,027- 465
+DEBUG- remote_connection.py- GET http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.3082/text {}- 2026-05-19 16:56:37,027- 403
+DEBUG- connectionpool.py- http://localhost:54069 "GET /session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.3082/text HTTP/11" 200 0- 2026-05-19 16:56:37,036- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":"15040504381"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:37,036- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:37,036- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '//*[@id="_mail_component_96_96"]/span[2]'}- 2026-05-19 16:56:40,038- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:40,047- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.2793"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:40,047- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:40,047- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.2793'}]}- 2026-05-19 16:56:40,047- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:40,052- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:40,052- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:40,052- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '//*[@id="_mail_component_96_96"]/span[2]'}- 2026-05-19 16:56:40,052- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:40,057- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.2793"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:40,057- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:40,057- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.2793/click {}- 2026-05-19 16:56:40,057- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.2793/click HTTP/11" 200 0- 2026-05-19 16:56:40,097- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:40,097- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:40,097- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '/html/body/div[2]/div[1]/div[2]/header/div/div[4]/div[2]/span[1]'}- 2026-05-19 16:56:45,110- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:45,118- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4022"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,118- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,118- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4022'}]}- 2026-05-19 16:56:45,118- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:45,122- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,122- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,122- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '/html/body/div[2]/div[1]/div[2]/header/div/div[4]/div[2]/span[1]'}- 2026-05-19 16:56:45,122- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:45,143- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4022"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,144- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,144- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4022/click {}- 2026-05-19 16:56:45,144- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4022/click HTTP/11" 200 0- 2026-05-19 16:56:45,218- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,218- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,218- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '/html/body/div[10]/div[1]/div[4]/div/span'}- 2026-05-19 16:56:45,220- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:45,227- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4086"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,227- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,228- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4086'}]}- 2026-05-19 16:56:45,228- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/execute/sync HTTP/11" 200 0- 2026-05-19 16:56:45,232- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,232- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,232- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element {'using': 'xpath', 'value': '/html/body/div[10]/div[1]/div[4]/div/span'}- 2026-05-19 16:56:45,232- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element HTTP/11" 200 0- 2026-05-19 16:56:45,251- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4086"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,251- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,251- 465
+DEBUG- remote_connection.py- POST http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4086/click {}- 2026-05-19 16:56:45,251- 403
+DEBUG- connectionpool.py- http://localhost:54069 "POST /session/d313131fec912885422cb4dfc4fe646d/element/f.AE83393F5043B3279FC24EFF208C1A43.d.A504FBACEF1BA52D3B1BF2F125786124.e.4086/click HTTP/11" 200 0- 2026-05-19 16:56:45,283- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:45,283- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:45,283- 465
+DEBUG- remote_connection.py- DELETE http://localhost:54069/session/d313131fec912885422cb4dfc4fe646d {}- 2026-05-19 16:56:48,296- 403
+DEBUG- connectionpool.py- http://localhost:54069 "DELETE /session/d313131fec912885422cb4dfc4fe646d HTTP/11" 200 0- 2026-05-19 16:56:48,351- 546
+DEBUG- remote_connection.py- Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})- 2026-05-19 16:56:48,351- 436
+DEBUG- remote_connection.py- Finished Request- 2026-05-19 16:56:48,351- 465
